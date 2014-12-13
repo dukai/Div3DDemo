@@ -1,0 +1,30 @@
+@import "reset.less";
+#container {
+  -webkit-perspective : 1000px;
+  //-webkit-perspective-origin  : 50% 50%;
+  .rect(1280px, 720px);
+  .abs;
+  background: rgba(100, 0, 0, .5);
+}
+#demo{
+  .rect(1280px, 720px);
+  /*
+  .ml(-100px);
+  .mt(-60px);
+  */
+  background: url(../images/1.jpg);
+  background-size: 100% 100%;
+  -webkit-transform-style: preserve-3d;
+  //-webkit-transform:rotateY(40deg);
+  color: #fff;
+  text-align: center;
+  line-height: 500px;
+}
+h1{
+  -webkit-transform-style: preserve-3d;
+  //-webkit-transform:rotateY(40deg);
+  color: #fff;
+  text-align: center;
+  .abs;
+  .pos(200px, 200px);
+}
