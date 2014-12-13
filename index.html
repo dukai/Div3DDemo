@@ -23,8 +23,8 @@
         var x = e.clientX;
         var y = e.clientY;
         console.log(x, y);
-        var ydeg = Math.ceil(((width - x) / width) * 10);
-        var xdeg = Math.ceil(((height - y) / height) * 10);
+        var ydeg = (((x - width) / width) * 10);
+        var xdeg = (((height - y) / height) * 10);
         $("#demo").css('-webkit-transform', 'rotateX(' + xdeg + 'deg) rotateY(' + ydeg + 'deg)');
         $("h1").css('-webkit-transform', 'rotateX(' + xdeg + 'deg) rotateY(' + ydeg + 'deg)');
     });
