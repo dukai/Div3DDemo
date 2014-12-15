@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=1000">
+    <title>3D Demo</title>
+
+
+    <link href="resource/css/index.css" rel="stylesheet" type="text/css" />
+    <script src="resource/js/jquery-1.7.2.min.js"></script>
+
+</head>
+<body class="c" style="height: 1000px;">
+<div class="d1"></div>
+<div class="d2"></div>
+<script>
+    var height = $("body").height() / 2;
+    var width = $("body").width() / 2;
+    console.log(width);
+    $("body").mousemove(function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        //console.log(x, y);
+        var ydeg = (((x - width) / width) * 40);
+        var xdeg = (((height - y) / height) * 40);
+        //console.log(ydeg);
+        $(".d1").css('-webkit-transform', 'rotateY(' + ydeg + 'deg)');
+        $(".d2").css('-webkit-transform', 'rotateY(' + ydeg + 'deg) translateZ(-200px)');
+    });
+</script>
+</body>
+</html>

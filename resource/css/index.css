@@ -73,7 +73,7 @@ img {
   clear: both;
 }
 #container {
-  -webkit-perspective: 1000px;
+  -webkit-perspective: 1000;
   width: 1280px;
   height: 720px;
   position: absolute;
@@ -100,4 +100,32 @@ h1 {
   position: absolute;
   left: 200px;
   top: 200px;
+}
+body.c {
+  -webkit-perspective: 1000;
+  -webkit-perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+}
+.d1 {
+  width: 500px;
+  height: 699px;
+  background: #f00;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+  background: url(../images/a.png);
+  position: absolute;
+  left: 60%;
+  top: 100px;
+  margin-left: -250px;
+}
+.d2 {
+  width: 500px;
+  height: 699px;
+  background: #0f0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+  position: absolute;
+  left: 30%;
+  top: 100px;
+  background: url(../images/b.png);
 }

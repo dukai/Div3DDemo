@@ -1,6 +1,6 @@
 @import "reset.less";
 #container {
-  -webkit-perspective : 1000px;
+  -webkit-perspective : 1000;
   //-webkit-perspective-origin  : 50% 50%;
   .rect(1280px, 720px);
   .abs;
@@ -27,4 +27,30 @@ h1{
   text-align: center;
   .abs;
   .pos(200px, 200px);
+}
+body.c{
+  -webkit-perspective: 1000;
+  -webkit-perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+}
+.d1{
+  .rect(500px, 699px);
+  background: #f00;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform:rotateY(0deg);
+  background: url(../images/a.png);
+  .abs;
+  left:60%;
+  top:100px;
+  .ml(-250px);
+}
+.d2{
+  .rect(500px, 699px);
+  background: #0f0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform:rotateY(0deg) translateZ(100px);
+  .abs;
+  left:30%;
+  top:100px;
+  background: url(../images/b.png);
 }
